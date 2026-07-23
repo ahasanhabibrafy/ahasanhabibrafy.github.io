@@ -28,6 +28,10 @@ body{
 
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+}
+
 /* =========================
    LINKS
 ========================= */
@@ -97,14 +101,25 @@ nav ul li{
 
 nav ul li a{
 
-    color:#444;
+    color:#777;              /* Grey */
     font-weight:500;
+    text-decoration:none;
+    transition:color 0.2s ease;
 
 }
 
 nav ul li a:hover{
 
-    color:#0056b3;
+    color:#111;
+    text-decoration: none;
+}
+
+nav ul li a.active{
+
+    color:#111;
+    text-decoration:underline;
+    text-underline-offset:4px;
+    text-decoration-thickness:2px;
 
 }
 
@@ -153,7 +168,7 @@ main{
     font-weight:500;
     color:#666;
 
-    margin-bottom:30px;
+
 
 }
 
@@ -192,24 +207,31 @@ main{
 
 .buttons a{
 
-    border:1px solid #0056b3;
+   background: #d0e8f7;
+    border: 1px solid #d0e8f7;
 
-    color:#0056b3;
+    color: #111;                 /* Deep black */
 
-    padding:10px 18px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
 
-    border-radius:4px;
+    padding: 10px 20px;
 
-    transition:0.2s;
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+
 
 }
 
 .buttons a:hover{
 
-    background:#0056b3;
-    color:white;
-    text-decoration:none;
-
+    background: #b7dbf2;         /* Slightly darker blue */
+    color: #111;
+    border-color: #b7dbf2;
+    text-decoration: none;
 }
 
 /* =========================
@@ -218,7 +240,7 @@ main{
 
 section{
 
-    margin-bottom:70px;
+    margin-bottom:40px;
 
 }
 
@@ -226,11 +248,11 @@ section h2{
 
     font-size:2rem;
 
-    margin-bottom:25px;
+    margin-bottom:10px;
 
     color:#111;
 
-    border-bottom:2px solid #0056b3;
+
 
     display:inline-block;
 
@@ -524,6 +546,7 @@ main{
     grid-template-columns:repeat(3,1fr);
     gap:25px;
     margin-top:30px;
+    margin-bottom:30px;
 
 }
 
@@ -544,7 +567,7 @@ main{
 }
 
 .gallery-item p{
-
+    margin-left:100px;
     margin-top:10px;
     font-size:0.95rem;
     color:#666;
@@ -714,3 +737,9 @@ main{
 .project-gallery img:hover{
     transform: scale(1.03);
 }
+.thesis-list {
+    padding-left:50px;
+}
+
+
+
